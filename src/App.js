@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import NewsList from "./NewsList";
 import "./styles.css";
 
-const API_KEY = "c3a43dd0e4b7b19e5708386cf434b2af";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const App = () => {
   const [articles, setArticles] = useState([]);
